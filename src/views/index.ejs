@@ -1,0 +1,37 @@
+<%- include('layouts/header', {title})  %>
+<div class="app">
+    <br />
+    <h1><%= title %></h1>
+    <!--Search Bar-->
+    <div class="wrap">
+        <form class="search" action="/search" method="POST">
+            <% if (search) { %>
+            <input class="searchTerm" placeholder="Gotta Search 'em all" name="search" type="text" value="<%= search %>"" >
+            <% } else { %>
+                <input class=" searchTerm" placeholder="Gotta Search 'em all" name="search" type="text">
+            <% }%>
+            <button type="submit" class="searchButton"><i class="fa fa-search"></i>
+        </form>
+
+    </div>
+    <% if (searchError) { %>
+    <small><%= searchError %> </small>
+    <% } %>
+    &nbsp;
+    <!--Thumbnails-->
+    <div class="wrapper">
+        <% pokemons.forEach(pokemon => { %>
+        <div class="card" style="background-color: <%= pokemon.color %>;">
+            <div class="img-container">
+                <img src="<%=pokemon.image%>" alt="">
+                <div class="caption">
+                    <h3><%=pokemon.name%></h3>
+                    <h5>Type:<%=pokemon.type%></h5>
+                </div>
+            </div>
+        </div>
+        <% }); %>
+
+    </div>
+</div>
+<%- include('layouts/footer')  %>

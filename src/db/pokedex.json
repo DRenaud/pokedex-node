@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Pikachu",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png",
+        "description": "#025",
+        "color": "#FCF7DE",
+        "type": "Electric"
+    },
+    {
+        "name": "Eevee",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png",
+        "description": "#133",
+        "color": "#F5F5F5",
+        "type": "Normal"
+    },
+    {
+        "name": "Venusaur",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
+        "description": "#003",
+        "color": "#DEFDE0",
+        "type": "Grass, Poison"
+    },
+    {
+        "name": "Charizard",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
+        "description": "#006",
+        "color": "#FDDFDF",
+        "type": "Fire, Flying"
+    },
+    {
+        "name": "Blastoise",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png",
+        "description": "#009",
+        "color": "#DEF3FD",
+        "type": "Water"
+    },
+    {
+        "name": "Caterpie",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png",
+        "description": "#010",
+        "color": "#f8d5a3",
+        "type": "Bug"
+    },
+    {
+        "name": "Sandshrew",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/027.png",
+        "description": "#027",
+        "color": "#f4e7da",
+        "type": "Ground"
+    },
+    {
+        "name": "Jigglypuff",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png",
+        "description": "#039",
+        "color": "#fceaff",
+        "type": "Normal,Fairy"
+    },
+    {
+        "name": "Mewtwo",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png",
+        "description": "#150",
+        "color": "#eaeda1",
+        "type": "Psychic"
+    },
+    {
+        "name": "Mankey",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/056.png",
+        "description": "#056",
+        "color": "#E6E0D4",
+        "type": "Fighting"
+    }
+]

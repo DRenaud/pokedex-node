@@ -1,0 +1,153 @@
+@import 'https://fonts.googleapis.com/css?family=Noto+Sans|Playfair+Display:700,700i|Oswald:400&display=swap';
+* {
+	box-sizing: border-box;
+}
+html, body {
+
+	text-align: center;
+
+  font-family: 'playfair-display', sans-serif;
+  display: flex;
+	flex-direction: column;
+ align-items: center;
+	justify-content: center;
+  flex-direction: column;
+  margin-top: 1px;
+  margin-bottom: 16px;
+}
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.search-wrapper {
+  position: relative;
+}
+h1{
+  font-family:'Noto sans', sans-serif;
+}
+.search-wrapper label {
+  position: absolute;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  top: 8px;
+  left: 12px;
+  z-index: -1;
+  transition: 0.15s all ease-in-out;
+}
+div#app .search-wrapper input {
+  padding: 4px 12px;
+  color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  transition: 0.15s all ease-in-out;
+  background: white;
+}
+div#app .search-wrapper input:focus {
+  outline: none;
+  transform: scale(1.05);
+}
+div#app .search-wrapper input:focus + label {
+  font-size: 10px;
+  transform: translateY(-24px) translateX(-12px);
+}
+div#app .search-wrapper input::-webkit-input-placeholder {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 100;
+}
+.wrapper {
+    	justify-content: center;
+
+  display: flex;
+	max-width: 1200px;
+  flex-wrap: wrap;
+  padding-top: 12px;
+}
+.img-container {
+  
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+}
+
+ .img-container img {
+	margin-top: 20px;
+	max-width: 90%;
+}
+.card {
+  	justify-content: center;
+
+  background-color: #eee;
+
+	text-align: center;
+ background-color: white;
+	border-radius: 30px;
+	margin: 2vw;
+	padding: 20px;
+  height: 270px;
+  margin-bottom:10px;
+  
+	text-align: center;
+  transition: 0.15s all ease-in-out;
+}
+.card:hover {
+  transform: scale(1.5);
+}
+.card p small {
+  margin: 1px 0 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	font-size: 0.7em;
+	padding: 5px 10px;
+}
+.card h5{
+  font-size: 12px;
+	margin: 1px 0 1px;
+	letter-spacing: 0.1px;
+}
+.card h3{
+  
+	margin: 1px 0 1px;
+	letter-spacing: 1px;
+}
+.search {
+  width: 100%;
+  display: flex;
+    justify-content: center;
+
+}
+
+.searchTerm {
+  
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.wrap{
+  margin: 5%;
+}
+/*Resize the wrap to see the search bar change!*/
