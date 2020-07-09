@@ -7,13 +7,16 @@ const pokemonService = require('../services/pokemon-service');
  * @param {function} next
  */
 function renderPokedexList(req, res, next) {
-    const pokemons = pokemonService.findAll();
-
-    res.render('index', {
-        title: 'Pokedex',
-        pokemons,
-        search: null,
-        searchError: null,
+    pokemonService.findAll().then((pokemons) => {
+        res.render('index', {
+            title: 'Pokedex',
+            pokemons,
+            search: null,
+            searchError: null,
+        });
+    })
+    .catch((error) => {
+        next(error);
     });
 }
 

@@ -1,0 +1,14 @@
+const mysql = require('mysql')
+
+const connection = mysql.createConnection({
+    host     : 'localhost',
+    user     : 'Damien',
+    password : '',
+    database : 'pokedex'
+});
+connection.connect(function(err) {
+    if (err) throw err;
+    console.log("Database connected !")
+});
+
+module.exports = connection;

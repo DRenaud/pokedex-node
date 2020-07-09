@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const databaseConnection = require('../db/db');
 
 
 /**
@@ -7,6 +8,20 @@ const path = require('path');
  * @returns 
  */
 function findAll() {
+    return new Promise((resolve, reject) => {
+        const query = `SELECT * from pokemons;`;
+
+        databaseConnection.query(query, (error, results) => {
+            if (error) {
+                reject(error);
+            }
+
+            resolve(results)
+        })
+    });
+
+
+
     return readDB();
 }
 
